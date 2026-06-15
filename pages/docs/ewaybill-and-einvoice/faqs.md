@@ -37,3 +37,18 @@ e-Invoice has been designed to automate your GSTR-1 and e-Waybill process. You s
 e-Invoice is a legal record. Cancelling your invoice (although e-Invoice is not cancellable) for updates errors or returns is not a good practice in such cases.
 
 You should adjust the difference with a credit or debit note over and above this invoice.
+
+### Can we generate e-Invoice for an invoice that contains only Nil-Rated or Exempted items?
+
+Yes, if the invoice is otherwise eligible for e-Invoice, India Compliance can
+generate e-Invoice even when all items are Nil-Rated, Exempted, or Non-GST —
+depending on the **Nil / Exempted / Non-GST Items in e-Invoice** setting in
+GST Settings (defaults to **Do Not Generate**).
+
+How those items are reported depends on this setting:
+
+- **Do Not Generate** — e-Invoice will not be generated for such invoices.
+- **Generate with Other Charges** — taxable value is reported as item-level
+  Other Charges.
+- **Generate with Taxable Values** — taxable value is reported in the item
+  details.

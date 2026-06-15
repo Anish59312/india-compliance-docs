@@ -15,7 +15,9 @@ structured_data:
 ---
 
 # Setting Up API
+
 ## GSP Credentials
+
 Setup Credentials for e-Waybill or e-Invoice on GSP Portal
 
 You need to create a new GSP User to generate and avail the features of e-Waybill or e-Invoice using APIs.  
@@ -41,7 +43,6 @@ To add GSP credentials to the ERPNext:
 **Go to GST Settings --> Select Credentials Tab --> Add new user with same Username and Password** 
 
 ![Adding GSP](./assets/gst_settings_credentials.png)
-
 
 ## e-Waybill Settings
 
@@ -84,6 +85,7 @@ On enabling this option, e-Waybill print will be attached to the invoice automat
 ![e-Waybill Settings](./assets/e_waybill_settings.png)
 
 ## e-Invoice Settings
+
 ::: warning
 You need to first enable API to access e-Invoice Settings
 :::
@@ -97,12 +99,32 @@ If this setting is enabled, an e-Invoice will automatically be generated on subm
 - **Generate e-Waybill with e-Invoice**
 e-Waybill will be generated along with e-Invoice if the invoice value threshold is met, and data is available and valid.
 
-    > e-Invoice is automatically generated for all invoices except for supplies to Unregistered Persons or Non-GST Supplies.
+    > e-Invoice is automatically generated for all invoices except for supplies
+    > to Unregistered Person or Non-GST Supplies.
 
-- **e-Invoice Applicable From**  
-e-Invoices will only be generated for invoices generated after this date. You can pre-configure this if it's going to be applicable at a later date. This date will be applicable only if **Apply e-Invoice for Selected Companies** option is disabled.
+- **Nil / Exempted / Non-GST Items in e-Invoice**
+Use this option to control how Nil-Rated, Exempted, and Non-GST items are
+reported in e-Invoice data.
+
+  - **Do Not Generate** — e-Invoice will not be generated for such invoices.
+  - **Generate with Other Charges** — taxable value is reported as item-level
+    Other Charges.
+  - **Generate with Taxable Values** — taxable value is reported in the item
+    details.
+
+  ::: warning
+  **Generate with Taxable Values** is not recommended. These items are
+  auto-populated in GSTR-1 as Zero-Rated, which can cause inconsistencies.
+  Use only if specifically required.
+  :::
 
 ![e-Invoice Settings](./assets/e_invoice_settings_1.png)
+
+- **e-Invoice Applicable From**  
+e-Invoices will only be generated for invoices generated after this date. You
+can pre-configure this if it's going to be applicable at a later date. This
+date will be applicable only if **Apply e-Invoice for Selected Companies**
+option is disabled.
 
 - **Apply e-Invoice for Selected Companies**
 This setting will allow you to configure e-Invoicing for Selected Companies only.
