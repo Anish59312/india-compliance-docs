@@ -40,10 +40,15 @@ You should adjust the difference with a credit or debit note over and above this
 
 ### Can we generate e-Invoice for an invoice that contains only Nil-Rated or Exempted items?
 
-Yes, if the invoice is otherwise eligible for e-Invoice, India Compliance can generate e-Invoice even when all items are Nil-Rated, Exempted, or Non-GST.
+Yes, if the invoice is otherwise eligible for e-Invoice, India Compliance can
+generate e-Invoice even when all items are Nil-Rated, Exempted, or Non-GST —
+depending on the **Nil / Exempted / Non-GST Items in e-Invoice** setting in
+GST Settings (defaults to **Do Not Generate**).
 
-How those items are reported depends on **Nil / Exempted / Non-GST Items in e-Invoice** in GST Settings:
+How those items are reported depends on this setting:
 
 - **Do Not Generate** — e-Invoice will not be generated for such invoices.
-- **Generate with Other Charges** — taxable value is sent as item-level Other Charges.
-- **Generate with Taxable Values** — taxable value is sent in the item details.
+- **Generate with Other Charges** — taxable value is reported as item-level
+  Other Charges.
+- **Generate with Taxable Values** — taxable value is reported in the item
+  details.
