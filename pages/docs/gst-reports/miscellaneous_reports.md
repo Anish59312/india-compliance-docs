@@ -113,7 +113,9 @@ A consolidated view of your **Input Service Distributor** activity — the commo
 Use the **Report View** filter to switch between three views:
 
 - **Purchase Invoice** — ISD-applicable purchase invoices and the ITC available to distribute
-- **ISD Distribution Invoice** — available v/s distributed ITC by each ISD Distribution Invoice
+- **ISD Distribution Invoice** — available vs distributed ITC by each ISD Distribution Invoice
 - **ISD Recipient Invoice** — tax received by each ISD Recipient Invoice
 
 > The impact of ISD distribution is also reflected in [GSTR-3B](/docs/gst-reports/gstr3b) and the [Purchase Reconciliation Tool](/docs/purchase-reconciliation/reconciling_purchase).
+
+![ISD Invoice Register](./assets/isd_invoice_register_report.png)
