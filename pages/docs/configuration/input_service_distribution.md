@@ -36,8 +36,9 @@ To set up ISD, follow the steps:
 4. Create a Company Address with **GST Category** as **Input Service Distributor**.
 5. Book the Purchase Invoices with this address as the Billing Address.
 
-> Book separate Purchase Invoice for items with ineligible ITC.
-
+   ::: info Ineligible for ITC
+   Book separate Purchase Invoice for items with ineligible ITC.
+   :::
 
 ![Creating an ISD-applicable Purchase Invoice](./assets/isd_create_purchase_invoice.gif)
 
