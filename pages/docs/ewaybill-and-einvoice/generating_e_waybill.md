@@ -28,6 +28,7 @@ You can generate the e-Waybill using the bulk generation facility or the APIs.
 - Purchase Receipt
 - Stock Entry
 - Subcontracting Receipt
+- Asset Movement
 
 ## Prerequisites
 - [GSP credentials in ERPNext](gst_settings#gsp-credentials)
