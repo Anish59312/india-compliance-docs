@@ -115,7 +115,7 @@ Once you have narrowed down to unreconciled transactions, you can process them i
 
 ![Perform Actions for Missing in Purchase](./assets/perform_actions_for_missing_in_purchase.png)
 
-### Copy Details from GSTR2A/2B
+### Copy Details from GSTR2A/2B {#copy-details-from-gstr2a-2b}
 
 Copy the Bill No and Bill Date reported in GSTR2A/2B to your matched purchase.
 
